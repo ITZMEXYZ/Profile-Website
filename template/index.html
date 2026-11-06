@@ -1,0 +1,375 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Zy Bañez | Personal Portfolio</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <header>
+        <nav class="navbar">
+            <a href="#home" class="logo">ZY BANEZ<span></span></a>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <a href="#contact" class="nav-button">Let's Talk</a>
+
+            <button class="menu-btn" id="menuBtn" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+
+    <!-- HOME SECTION -->
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+
+            <p class="welcome-text">
+                <span class="status-dot"></span>
+                WELCOME TO MY PORTFOLIO
+            </p>
+
+            <h1>
+                Hi, I'm <span>Zy Bañez</span>
+            </h1>
+
+            <h2>Computer Engineering Student</h2>
+
+            <p class="hero-description">
+                I am passionate about technology, computer networks,
+                software development, and cybersecurity. I enjoy
+                learning new technologies and creating solutions
+                through programming and technical problem-solving.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#projects" class="btn primary-btn">
+                    Explore My Work <i class="fas fa-arrow-right"></i>
+                </a>
+
+                <a href="#about" class="btn secondary-btn">
+                    More About Me
+                </a>
+            </div>
+
+            <div class="social-links">
+                <a href="https://github.com/ITZMEXYZ"
+                   target="_blank" rel="noopener noreferrer"
+                   aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+
+                <a href="https://www.linkedin.com/in/ba%C3%B1ez-zy-e-51032640b/"
+                   target="_blank" rel="noopener noreferrer"
+                   aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+
+                <a href="zyescotebanes@gmail.com"
+                   aria-label="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+
+        </div>
+
+        <div class="hero-image">
+            <div class="image-glow"></div>
+            <img src="{{ url_for('static', filename='images/profile.jpg') }}"
+                 alt="Zy Bañez Profile Picture">
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section">
+
+        <div class="section-heading">
+            <p class="section-label">GET TO KNOW ME</p>
+            <h2>About <span>Me</span></h2>
+        </div>
+
+        <div class="about-content">
+
+            <div class="about-text">
+                <h3>Exploring Technology, Building Solutions.</h3>
+
+                <p>
+                    I am a Bachelor of Science in Computer Engineering
+                    student at the Polytechnic University of the Philippines.
+
+                    I have a strong interest in network engineering,
+                    web development, cybersecurity, and computer systems.
+                </p>
+
+                <p>
+                    Throughout my academic journey, I have worked on
+                    programming projects and networking activities that
+                    helped me develop my technical and problem-solving skills.
+
+                    I am continuously improving my knowledge and
+                    looking for opportunities to apply what I learn
+                    in real-world situations.
+                </p>
+
+                <a href="#contact" class="btn primary-btn">
+                    Get In Touch
+                </a>
+            </div>
+
+            <div class="about-details">
+
+                <div class="detail-card">
+                    <i class="fas fa-graduation-cap"></i>
+                    <div>
+                        <h4>Education</h4>
+                        <p>BS Computer Engineering</p>
+                    </div>
+                </div>
+
+                <div class="detail-card">
+                    <i class="fas fa-university"></i>
+                    <div>
+                        <h4>University</h4>
+                        <p>Polytechnic University of the Philippines</p>
+                    </div>
+                </div>
+
+                <div class="detail-card">
+                    <i class="fas fa-laptop-code"></i>
+                    <div>
+                        <h4>Interests</h4>
+                        <p>Networking, Web Development, Cybersecurity</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="section">
+
+        <div class="section-heading">
+            <p class="section-label">WHAT I CAN DO</p>
+            <h2>Technical <span>Skills</span></h2>
+        </div>
+
+        <div class="skills-container">
+
+            <div class="skill-card">
+                <i class="fas fa-code"></i>
+                <h3>Web Development</h3>
+                <p>HTML, CSS, JavaScript, Python, Flask</p>
+            </div>
+
+            <div class="skill-card">
+                <i class="fas fa-network-wired"></i>
+                <h3>Networking</h3>
+                <p>TCP/IP, Subnetting, VLAN, Routing, Cisco Packet Tracer</p>
+            </div>
+
+            <div class="skill-card">
+                <i class="fas fa-shield-halved"></i>
+                <h3>Cybersecurity</h3>
+                <p>Wireshark, Kali Linux, Ubuntu, Network Security</p>
+            </div>
+
+            <div class="skill-card">
+                <i class="fas fa-database"></i>
+                <h3>Programming</h3>
+                <p>Python, C, JavaScript, Database Management</p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="section">
+
+        <div class="section-heading">
+            <p class="section-label">MY RECENT WORK</p>
+            <h2>Featured <span>Projects</span></h2>
+        </div>
+
+        <div class="projects-container">
+
+            <div class="project-card">
+                <div class="project-icon">
+                    <i class="fas fa-shield-halved"></i>
+                </div>
+
+                <p class="project-category">CYBERSECURITY</p>
+                <h3>WAF Simulation</h3>
+
+                <p class="project-description">
+                    A Web Application Firewall simulation using
+                    Ubuntu as the defender and Kali Linux as the
+                    attacker to explore web application security.
+                </p>
+
+                <div class="project-tags">
+                    <span>Ubuntu</span>
+                    <span>Kali Linux</span>
+                    <span>Security</span>
+                </div>
+
+                <a href="#" class="project-link">
+                    View Project <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+
+
+            <div class="project-card">
+                <div class="project-icon">
+                    <i class="fas fa-wallet"></i>
+                </div>
+
+                <p class="project-category">WEB DEVELOPMENT</p>
+                <h3>Finance Tracking App</h3>
+
+                <p class="project-description">
+                    A financial tracking application designed
+                    to help users monitor their expenses and
+                    manage their personal finances.
+                </p>
+
+                <div class="project-tags">
+                    <span>Python</span>
+                    <span>Flask</span>
+                    <span>Database</span>
+                </div>
+
+                <a href="#" class="project-link">
+                    View Project <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+
+
+            <div class="project-card">
+                <div class="project-icon">
+                    <i class="fas fa-network-wired"></i>
+                </div>
+
+                <p class="project-category">NETWORK ENGINEERING</p>
+                <h3>Network Configuration Labs</h3>
+
+                <p class="project-description">
+                    Networking exercises involving IP addressing,
+                    VLSM, VLANs, DHCP, NAT, and routing protocols
+                    using Cisco Packet Tracer.
+                </p>
+
+                <div class="project-tags">
+                    <span>Cisco</span>
+                    <span>Packet Tracer</span>
+                    <span>Networking</span>
+                </div>
+
+                <a href="#" class="project-link">
+                    View Project <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section">
+
+        <div class="section-heading">
+            <p class="section-label">LET'S CONNECT</p>
+            <h2>Contact <span>Me</span></h2>
+        </div>
+
+        <div class="contact-box">
+
+            <h3>Have a project or opportunity?</h3>
+
+            <p>
+                I am open to connecting with professionals,
+                collaborating on projects, and exploring
+                opportunities in the technology field.
+            </p>
+
+            <a href="zyescotebanes@gmail.com"
+               class="btn primary-btn">
+                <i class="fas fa-envelope"></i> Send Me an Email
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <a href="#home" class="logo">ZY BANEZ<span></span></a>
+
+        <p>Designed and Developed by Zy Bañez.</p>
+
+        <p class="copyright">
+            &copy; 2026 Zy Bañez. All Rights Reserved.
+        </p>
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+    <script>
+        const menuBtn = document.getElementById("menuBtn");
+        const navLinks = document.querySelector(".nav-links");
+
+        menuBtn.addEventListener("click", function () {
+            navLinks.classList.toggle("active");
+
+            const icon = menuBtn.querySelector("i");
+
+            if (navLinks.classList.contains("active")) {
+                icon.classList.replace("fa-bars", "fa-xmark");
+            } else {
+                icon.classList.replace("fa-xmark", "fa-bars");
+            }
+        });
+
+        document.querySelectorAll(".nav-links a").forEach(link => {
+            link.addEventListener("click", function () {
+                navLinks.classList.remove("active");
+
+                const icon = menuBtn.querySelector("i");
+                icon.classList.replace("fa-xmark", "fa-bars");
+            });
+        });
+    </script>
+
+</body>
+</html>
